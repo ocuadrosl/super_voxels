@@ -6,19 +6,23 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-#include "itkImage.h"
-#include "itkImageFileWriter.h"
-#include "itkImageSeriesReader.h"
+
+#include "Regular_grid.h"
+#include "Super_voxels.h"
 
 #include <iostream>
 using namespace std;
 
 int main()
 {
-	typedef signed short input_pixel_t;
-	typedef itk::Image<input_pixel_t, 3> image_t;
-	typedef itk::ImageFileReader<image_t> reader_t;
+	sv::Regular_grid* r_grid = new sv::Regular_grid();
 
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
+	sv::Super_voxels*  super_voxels = new sv::Super_voxels(r_grid);
+
+	super_voxels->read_volume("../volumes/prostata/prostata_lai.nii");
+
+
+
+
 	return 0;
 }
