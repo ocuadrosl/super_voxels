@@ -6,7 +6,6 @@
 // Description : Hello World in C++, Ansi-style
 //============================================================================
 
-
 #include "Regular_grid.h"
 #include "Super_voxels.h"
 
@@ -17,12 +16,11 @@ int main()
 {
 	sv::Regular_grid* r_grid = new sv::Regular_grid();
 
-	sv::Super_voxels*  super_voxels = new sv::Super_voxels(r_grid);
+	sv::Super_voxels* super_voxels = new sv::Super_voxels(r_grid);
 
 	super_voxels->read_volume("../volumes/prostata/prostata_lai.nii");
-
-
-
+	super_voxels->process();
+	super_voxels->write_volume("../results/resultado.nii");
 
 	return 0;
 }

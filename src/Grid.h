@@ -8,6 +8,11 @@
 #ifndef GRID_H_
 #define GRID_H_
 
+#include "Typedefs.h"
+#include "Super_voxel.h"
+
+using namespace std;
+
 namespace sv
 {
 
@@ -22,7 +27,7 @@ public:
 	{
 	}
 	;
-	virtual void process()=0;
+	virtual void process(volume_tp __volume, vector<Super_voxel*>* __super_voxels)=0;
 };
 
 } /* namespace sv */

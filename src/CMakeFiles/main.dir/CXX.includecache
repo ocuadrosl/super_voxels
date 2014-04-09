@@ -7,12 +7,20 @@
 #IncludeRegexTransform: 
 
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Grid.h
+Typedefs.h
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Typedefs.h
+Super_voxel.h
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxel.h
 
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Regular_grid.h
 Grid.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Grid.h
 iostream
 -
+
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxel.h
+Voxel.h
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Voxel.h
 
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxels.h
 Grid.h
@@ -23,12 +31,16 @@ itkImage.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/itkImage.h
 itkImageFileReader.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/itkImageFileReader.h
+itkImageFileWriter.h
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/itkImageFileWriter.h
 string
 -
 
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Typedefs.h
 itkImage.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/itkImage.h
+
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Voxel.h
 
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/super_voxels.cpp
 Regular_grid.h
@@ -320,6 +332,12 @@ itkArray.h
 itkNumericTraitsArrayPixel.h
 /usr/local/include/ITK-4.5/itkNumericTraitsArrayPixel.h
 
+/usr/local/include/ITK-4.5/itkCommand.h
+itkObject.h
+/usr/local/include/ITK-4.5/itkObject.h
+itkObjectFactory.h
+/usr/local/include/ITK-4.5/itkObjectFactory.h
+
 /usr/local/include/ITK-4.5/itkConceptChecking.h
 itkPixelTraits.h
 /usr/local/include/ITK-4.5/itkPixelTraits.h
@@ -516,6 +534,26 @@ itkProcessObject.h
 algorithm
 -
 
+/usr/local/include/ITK-4.5/itkImageAlgorithm.h
+itkImageRegionIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionIterator.h
+type_traits
+-
+tr1/type_traits
+-
+itkIsSame.h
+/usr/local/include/ITK-4.5/itkIsSame.h
+itkImageAlgorithm.hxx
+/usr/local/include/ITK-4.5/itkImageAlgorithm.hxx
+
+/usr/local/include/ITK-4.5/itkImageAlgorithm.hxx
+itkImageAlgorithm.h
+/usr/local/include/ITK-4.5/itkImageAlgorithm.h
+itkImageRegionIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionIterator.h
+itkImageScanlineIterator.h
+/usr/local/include/ITK-4.5/itkImageScanlineIterator.h
+
 /usr/local/include/ITK-4.5/itkImageBase.h
 itkDataObject.h
 /usr/local/include/ITK-4.5/itkDataObject.h
@@ -560,6 +598,20 @@ itkNeighborhood.h
 itkImageRegion.h
 /usr/local/include/ITK-4.5/itkImageRegion.h
 
+/usr/local/include/ITK-4.5/itkImageConstIterator.h
+itkImage.h
+/usr/local/include/ITK-4.5/itkImage.h
+itkIndex.h
+/usr/local/include/ITK-4.5/itkIndex.h
+itkNumericTraits.h
+/usr/local/include/ITK-4.5/itkNumericTraits.h
+itkImageConstIterator.hxx
+/usr/local/include/ITK-4.5/itkImageConstIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageConstIterator.hxx
+itkImageConstIterator.h
+/usr/local/include/ITK-4.5/itkImageConstIterator.h
+
 /usr/local/include/ITK-4.5/itkImageFileReader.h
 ITKIOImageBaseExport.h
 /usr/local/include/ITK-4.5/ITKIOImageBaseExport.h
@@ -596,6 +648,52 @@ itkVectorImage.h
 itksys/SystemTools.hxx
 /usr/local/include/ITK-4.5/itksys/SystemTools.hxx
 fstream
+-
+
+/usr/local/include/ITK-4.5/itkImageFileWriter.h
+ITKIOImageBaseExport.h
+/usr/local/include/ITK-4.5/ITKIOImageBaseExport.h
+itkProcessObject.h
+/usr/local/include/ITK-4.5/itkProcessObject.h
+itkImageIOBase.h
+/usr/local/include/ITK-4.5/itkImageIOBase.h
+itkMacro.h
+/usr/local/include/ITK-4.5/itkMacro.h
+itkImageFileWriter.hxx
+/usr/local/include/ITK-4.5/itkImageFileWriter.hxx
+itkImageIOFactoryRegisterManager.h
+/usr/local/include/ITK-4.5/itkImageIOFactoryRegisterManager.h
+
+/usr/local/include/ITK-4.5/itkImageFileWriter.hxx
+itkImageFileWriter.h
+/usr/local/include/ITK-4.5/itkImageFileWriter.h
+itkDataObject.h
+/usr/local/include/ITK-4.5/itkDataObject.h
+itkObjectFactoryBase.h
+/usr/local/include/ITK-4.5/itkObjectFactoryBase.h
+itkImageIOFactory.h
+/usr/local/include/ITK-4.5/itkImageIOFactory.h
+itkCommand.h
+/usr/local/include/ITK-4.5/itkCommand.h
+vnl/vnl_vector.h
+/usr/local/include/ITK-4.5/vnl/vnl_vector.h
+itkVectorImage.h
+/usr/local/include/ITK-4.5/itkVectorImage.h
+itkImageRegionIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionIterator.h
+itkRGBPixel.h
+/usr/local/include/ITK-4.5/itkRGBPixel.h
+itkRGBAPixel.h
+/usr/local/include/ITK-4.5/itkRGBAPixel.h
+itkSymmetricSecondRankTensor.h
+/usr/local/include/ITK-4.5/itkSymmetricSecondRankTensor.h
+itkDiffusionTensor3D.h
+/usr/local/include/ITK-4.5/itkDiffusionTensor3D.h
+itkMatrix.h
+/usr/local/include/ITK-4.5/itkMatrix.h
+itkImageAlgorithm.h
+/usr/local/include/ITK-4.5/itkImageAlgorithm.h
+complex
 -
 
 /usr/local/include/ITK-4.5/itkImageHelper.h
@@ -650,6 +748,16 @@ itkObjectFactory.h
 itkImageRegion.h
 /usr/local/include/ITK-4.5/itkImageRegion.h
 
+/usr/local/include/ITK-4.5/itkImageIterator.h
+itkImageConstIterator.h
+/usr/local/include/ITK-4.5/itkImageConstIterator.h
+itkImageIterator.hxx
+/usr/local/include/ITK-4.5/itkImageIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageIterator.hxx
+itkImageIterator.h
+/usr/local/include/ITK-4.5/itkImageIterator.h
+
 /usr/local/include/ITK-4.5/itkImageRegion.h
 itkRegion.h
 /usr/local/include/ITK-4.5/itkRegion.h
@@ -666,6 +774,26 @@ itkImageRegion.hxx
 itkImageRegion.h
 /usr/local/include/ITK-4.5/itkImageRegion.h
 
+/usr/local/include/ITK-4.5/itkImageRegionConstIterator.h
+itkImageIterator.h
+/usr/local/include/ITK-4.5/itkImageIterator.h
+itkImageRegionConstIterator.hxx
+/usr/local/include/ITK-4.5/itkImageRegionConstIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageRegionConstIterator.hxx
+itkImageRegionConstIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionConstIterator.h
+
+/usr/local/include/ITK-4.5/itkImageRegionIterator.h
+itkImageRegionConstIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionConstIterator.h
+itkImageRegionIterator.hxx
+/usr/local/include/ITK-4.5/itkImageRegionIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageRegionIterator.hxx
+itkImageRegionIterator.h
+/usr/local/include/ITK-4.5/itkImageRegionIterator.h
+
 /usr/local/include/ITK-4.5/itkImageRegionSplitterBase.h
 itkImageRegion.h
 /usr/local/include/ITK-4.5/itkImageRegion.h
@@ -673,6 +801,26 @@ itkObjectFactory.h
 /usr/local/include/ITK-4.5/itkObjectFactory.h
 itkImageIORegion.h
 /usr/local/include/ITK-4.5/itkImageIORegion.h
+
+/usr/local/include/ITK-4.5/itkImageScanlineConstIterator.h
+itkImageIterator.h
+/usr/local/include/ITK-4.5/itkImageIterator.h
+itkImageScanlineConstIterator.hxx
+/usr/local/include/ITK-4.5/itkImageScanlineConstIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageScanlineConstIterator.hxx
+itkImageScanlineConstIterator.h
+/usr/local/include/ITK-4.5/itkImageScanlineConstIterator.h
+
+/usr/local/include/ITK-4.5/itkImageScanlineIterator.h
+itkImageScanlineConstIterator.h
+/usr/local/include/ITK-4.5/itkImageScanlineConstIterator.h
+itkImageScanlineIterator.hxx
+/usr/local/include/ITK-4.5/itkImageScanlineIterator.hxx
+
+/usr/local/include/ITK-4.5/itkImageScanlineIterator.hxx
+itkImageScanlineIterator.h
+/usr/local/include/ITK-4.5/itkImageScanlineIterator.h
 
 /usr/local/include/ITK-4.5/itkImageSource.h
 itkProcessObject.h
@@ -745,6 +893,8 @@ cstddef
 -
 climits
 -
+
+/usr/local/include/ITK-4.5/itkIsSame.h
 
 /usr/local/include/ITK-4.5/itkLightObject.h
 itkMacro.h

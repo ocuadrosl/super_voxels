@@ -4,8 +4,10 @@
 CMakeFiles/main.dir/super_voxels.cpp.o
  /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Grid.h
  /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Regular_grid.h
+ /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxel.h
  /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxels.h
  /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Typedefs.h
+ /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Voxel.h
  /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/super_voxels.cpp
  /usr/local/include/ITK-4.5/ITKCommonExport.h
  /usr/local/include/ITK-4.5/ITKIOImageBaseExport.h
@@ -65,6 +67,7 @@ CMakeFiles/main.dir/super_voxels.cpp.o
  /usr/local/include/ITK-4.5/iso/vcl_limits.h
  /usr/local/include/ITK-4.5/itkArray.h
  /usr/local/include/ITK-4.5/itkArray.hxx
+ /usr/local/include/ITK-4.5/itkCommand.h
  /usr/local/include/ITK-4.5/itkConceptChecking.h
  /usr/local/include/ITK-4.5/itkConfigure.h
  /usr/local/include/ITK-4.5/itkContinuousIndex.h
@@ -93,18 +96,34 @@ CMakeFiles/main.dir/super_voxels.cpp.o
  /usr/local/include/ITK-4.5/itkIOConfigure.h
  /usr/local/include/ITK-4.5/itkImage.h
  /usr/local/include/ITK-4.5/itkImage.hxx
+ /usr/local/include/ITK-4.5/itkImageAlgorithm.h
+ /usr/local/include/ITK-4.5/itkImageAlgorithm.hxx
  /usr/local/include/ITK-4.5/itkImageBase.h
  /usr/local/include/ITK-4.5/itkImageBase.hxx
  /usr/local/include/ITK-4.5/itkImageBoundaryCondition.h
+ /usr/local/include/ITK-4.5/itkImageConstIterator.h
+ /usr/local/include/ITK-4.5/itkImageConstIterator.hxx
  /usr/local/include/ITK-4.5/itkImageFileReader.h
  /usr/local/include/ITK-4.5/itkImageFileReader.hxx
+ /usr/local/include/ITK-4.5/itkImageFileWriter.h
+ /usr/local/include/ITK-4.5/itkImageFileWriter.hxx
  /usr/local/include/ITK-4.5/itkImageHelper.h
  /usr/local/include/ITK-4.5/itkImageIOBase.h
  /usr/local/include/ITK-4.5/itkImageIOFactory.h
  /usr/local/include/ITK-4.5/itkImageIORegion.h
+ /usr/local/include/ITK-4.5/itkImageIterator.h
+ /usr/local/include/ITK-4.5/itkImageIterator.hxx
  /usr/local/include/ITK-4.5/itkImageRegion.h
  /usr/local/include/ITK-4.5/itkImageRegion.hxx
+ /usr/local/include/ITK-4.5/itkImageRegionConstIterator.h
+ /usr/local/include/ITK-4.5/itkImageRegionConstIterator.hxx
+ /usr/local/include/ITK-4.5/itkImageRegionIterator.h
+ /usr/local/include/ITK-4.5/itkImageRegionIterator.hxx
  /usr/local/include/ITK-4.5/itkImageRegionSplitterBase.h
+ /usr/local/include/ITK-4.5/itkImageScanlineConstIterator.h
+ /usr/local/include/ITK-4.5/itkImageScanlineConstIterator.hxx
+ /usr/local/include/ITK-4.5/itkImageScanlineIterator.h
+ /usr/local/include/ITK-4.5/itkImageScanlineIterator.hxx
  /usr/local/include/ITK-4.5/itkImageSource.h
  /usr/local/include/ITK-4.5/itkImageSource.hxx
  /usr/local/include/ITK-4.5/itkImageTransformHelper.h
@@ -113,6 +132,7 @@ CMakeFiles/main.dir/super_voxels.cpp.o
  /usr/local/include/ITK-4.5/itkIndent.h
  /usr/local/include/ITK-4.5/itkIndex.h
  /usr/local/include/ITK-4.5/itkIntTypes.h
+ /usr/local/include/ITK-4.5/itkIsSame.h
  /usr/local/include/ITK-4.5/itkLightObject.h
  /usr/local/include/ITK-4.5/itkLightProcessObject.h
  /usr/local/include/ITK-4.5/itkMacro.h
