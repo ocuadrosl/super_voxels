@@ -27,6 +27,8 @@ public:
 
 	void sv_size(int __sv_size);
 
+	int mean_sv_size();
+
 
 private:
 	u_int _sv_size; //super voxel size def value 10
@@ -39,6 +41,11 @@ private:
 	void link_voxels(vector<Super_voxel*>* __super_voxels);
 
 };
+
+int Regular_grid::mean_sv_size()
+{
+	return _sv_size;
+}
 
 void Regular_grid::sv_size(int __sv_size)
 {

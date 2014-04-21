@@ -9,6 +9,7 @@
 #define SUPER_VOXELS_H_
 
 #include "Grid.h"
+#include "Regular_grid.h"
 #include "Typedefs.h"
 
 #include "itkImage.h"
@@ -37,12 +38,22 @@ public:
 	void process(); //main method to manage the grid creation and the super voxels extraction
 	Super_voxel *&operator[](int __index);
 
-
 	//setters
 	void lambda_0(float __lambda_0);
 	void lambda_1(float __lambda_1);
 	void threshold(float __threshold);
 	void iterations(int __iterations);
+	void mean_sv_size(int __mean_sv_size);
+
+	//getters
+
+	int size();
+
+	int mean_sv_size();
+
+	int volume_columns();
+	int volume_rows();
+	int volume_slices();
 
 private:
 
@@ -54,6 +65,7 @@ private:
 	float _lambda_1;
 	float _threshold;
 	int _iterations;
+	int _mean_sv_size; //super voxels mean size
 
 	void sutv(); //speeded up turbo voxels, one iteration
 	bool k_means_cost_function(Voxel* __v_0, Voxel* __v_1);
@@ -61,6 +73,37 @@ private:
 	void sv_clean();
 
 };
+
+int Super_voxels::volume_slices()
+{
+	return _volume->GetLargestPossibleRegion().GetSize()[2];
+}
+
+int Super_voxels::volume_columns()
+{
+	return _volume->GetLargestPossibleRegion().GetSize()[0];
+}
+
+int Super_voxels::volume_rows()
+{
+	return _volume->GetLargestPossibleRegion().GetSize()[1];
+}
+
+void Super_voxels::mean_sv_size(int __mean_sv_size)
+{
+	_mean_sv_size = __mean_sv_size;
+
+}
+
+int Super_voxels::size()
+{
+	return _super_voxels.size();
+}
+
+int Super_voxels::mean_sv_size()
+{
+	return _mean_sv_size;
+}
 
 Super_voxel *& Super_voxels::operator[](int __index)
 {
@@ -339,6 +382,9 @@ void Super_voxels::sv_update()
 void Super_voxels::process()
 {
 	_grid->process(_volume, &_super_voxels);
+
+	_mean_sv_size = _grid->mean_sv_size();
+
 	delete _grid;
 
 	for (int i = 0; i < _iterations; i++)
@@ -457,13 +503,24 @@ void Super_voxels::read_volume(string __file_name)
 
 Super_voxels::Super_voxels(Grid* __grid)
 {
-	_grid = __grid;
+
+	if (__grid == 0)
+	{
+		_grid = new Regular_grid(); //default
+
+	}
+	else
+	{
+		_grid = __grid;
+	}
 
 	//default values
 	_lambda_0 = 1;
 	_lambda_1 = 0.5;
 	_threshold = 0; //actually is not used
 	_iterations = 5;
+
+	_mean_sv_size = 0;
 
 }
 

@@ -25,6 +25,8 @@ Voxel.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Super_voxels.h
 Grid.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Grid.h
+Regular_grid.h
+/home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Regular_grid.h
 Typedefs.h
 /home/oscar/Documentos/universidad/usp-icmc/doctorado/src/super_voxels/src/Typedefs.h
 itkImage.h

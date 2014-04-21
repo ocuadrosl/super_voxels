@@ -28,6 +28,7 @@ public:
 	}
 	;
 	virtual void process(volume_tp __volume, vector<Super_voxel*>* __super_voxels)=0;
+	virtual int mean_sv_size()=0;
 };
 
 } /* namespace sv */
